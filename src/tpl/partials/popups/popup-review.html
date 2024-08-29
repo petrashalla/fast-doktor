@@ -1,0 +1,156 @@
+<!-- Pop-up review -->
+<div class="popup" data-target="popup-review"> 
+    <div class="popup__body popup-review__body">
+        <div class="popup__content popup-review__content">
+            <picture class="close-popup close-popup-btn popup-review__close">
+                <source srcset="assets/img/icons/popup-call-1-close.svg" type="image/svg+xml">
+                <img src="assets/img/icons/popup-call-1-close.png" alt="close_popup">
+            </picture> 
+
+            <form class="popup-review__form">
+                <div>
+                    <div class="popup-review__text">
+                        <p class="popup-review__title">Оставьте ваш отзыв</p>
+                        <p class="popup-review__subtitle">Ваше мнение для улучшения работы нашей клиники и наших специалистов</p>                        
+                    </div>
+
+                    <div class="popup-review__inputs">
+                        <div class="input-wrapper popup-review__field">
+                            <input type="text" class="input popup-review__input name-input" placeholder="Имя" required> 
+                            <p class="input-error">Пожалуйста, проверьте имя</p>
+                            <button class="input-clear"><img src="assets/img/icons/clear.svg" alt=""></button>
+                        </div>
+
+                        <div class="input-wrapper popup-review__field">
+                            <input type="tel" class="input popup-review__input" placeholder="Номер телефона" required>
+                            <p class="input-error">Пожалуйста, проверьте номер</p>
+                            <button class="input-clear"><img src="assets/img/icons/clear.svg" alt=""></button>
+                        </div>
+
+                        <div class="select popup-review__select popup-review__field">
+                            <input class="select__input" type="hidden" name="">
+                            <div class="select__head popup-review__select_head">
+                                <span>Услуга</span>
+                                <p>Выбрать</p>
+                            </div>
+                            <ul class="select__list popup-review__select_list" style="display: none;">
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                                <li class="select__item">Лечение алкоголизма</li>
+                            </ul>
+                        </div>
+
+                        <div class="select popup-review__select popup-review__field">
+                            <input class="select__input" type="hidden" name="">
+                            <div class="select__head popup-review__select_head">
+                                <span>Врач</span>
+                                <p>Выбрать</p>
+                            </div>
+                            <ul class="select__list popup-review__select_list" style="display: none;">
+                                <li class="select__item">Зайцева Валентина Ивановна</li>
+                                <li class="select__item">Ирушин Василий Петрович</li>
+                                <li class="select__item">Зайцева Валентина Ивановна</li>
+                                <li class="select__item">Ирушин Василий Петрович</li>
+                                <li class="select__item">Зайцева Валентина Ивановна</li>
+                                <li class="select__item">Ирушин Василий Петрович</li>
+                                <li class="select__item">Зайцева Валентина Ивановна</li>
+                                <li class="select__item">Ирушин Василий Петрович</li>
+                                <li class="select__item">Зайцева Валентина Ивановна</li>
+                                <li class="select__item">Ирушин Василий Петрович</li>
+                            </ul>
+                        </div>
+
+                        <div class="input-wrapper popup-review__field-textarea">
+                            <textarea  class="textarea popup-review__textarea" placeholder="Текст отзыва" required></textarea>
+                            <p class="input-error">Пожалуйста, введите текст</p>
+                        </div>
+                    </div>
+
+                    <div class="popup-review__estimation">
+                        <p class="popup-review__estimation_text">Поставьте оценку врачу:</p>
+                        <div class="full-stars">
+                            <div class="rating-group">
+                                <input name="fst" value="0" type="radio" disabled checked />
+                                
+                                <label for="fst-1">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5245 1.08156C11.6741 0.620903 12.3259 0.620903 12.4755 1.08156L14.4432 7.13729C14.644 7.75532 15.2199 8.17376 15.8697 8.17376H22.2371C22.7215 8.17376 22.9229 8.79357 22.531 9.07827L17.3797 12.8209C16.854 13.2029 16.634 13.8799 16.8348 14.498L18.8024 20.5537C18.9521 21.0143 18.4248 21.3974 18.033 21.1127L12.8817 17.3701C12.3559 16.9881 11.6441 16.9881 11.1183 17.3701L5.96701 21.1127C5.57515 21.3974 5.04791 21.0144 5.19759 20.5537L7.16522 14.498C7.36603 13.8799 7.14604 13.2029 6.62031 12.8209L1.469 9.07827C1.07714 8.79357 1.27853 8.17376 1.76289 8.17376H8.13026C8.7801 8.17376 9.35604 7.75532 9.55685 7.13729L11.5245 1.08156Z" stroke="#4F6DCD"/>
+                                        </svg>
+                                        
+                                </label>
+                                <input name="fst" id="fst-1" value="1" type="radio" />
+                                
+                                <label for="fst-2">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5245 1.08156C11.6741 0.620903 12.3259 0.620903 12.4755 1.08156L14.4432 7.13729C14.644 7.75532 15.2199 8.17376 15.8697 8.17376H22.2371C22.7215 8.17376 22.9229 8.79357 22.531 9.07827L17.3797 12.8209C16.854 13.2029 16.634 13.8799 16.8348 14.498L18.8024 20.5537C18.9521 21.0143 18.4248 21.3974 18.033 21.1127L12.8817 17.3701C12.3559 16.9881 11.6441 16.9881 11.1183 17.3701L5.96701 21.1127C5.57515 21.3974 5.04791 21.0144 5.19759 20.5537L7.16522 14.498C7.36603 13.8799 7.14604 13.2029 6.62031 12.8209L1.469 9.07827C1.07714 8.79357 1.27853 8.17376 1.76289 8.17376H8.13026C8.7801 8.17376 9.35604 7.75532 9.55685 7.13729L11.5245 1.08156Z" stroke="#4F6DCD"/>
+                                    </svg>
+                                </label>
+                                <input name="fst" id="fst-2" value="2" type="radio" />
+                                
+                                <label for="fst-3">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5245 1.08156C11.6741 0.620903 12.3259 0.620903 12.4755 1.08156L14.4432 7.13729C14.644 7.75532 15.2199 8.17376 15.8697 8.17376H22.2371C22.7215 8.17376 22.9229 8.79357 22.531 9.07827L17.3797 12.8209C16.854 13.2029 16.634 13.8799 16.8348 14.498L18.8024 20.5537C18.9521 21.0143 18.4248 21.3974 18.033 21.1127L12.8817 17.3701C12.3559 16.9881 11.6441 16.9881 11.1183 17.3701L5.96701 21.1127C5.57515 21.3974 5.04791 21.0144 5.19759 20.5537L7.16522 14.498C7.36603 13.8799 7.14604 13.2029 6.62031 12.8209L1.469 9.07827C1.07714 8.79357 1.27853 8.17376 1.76289 8.17376H8.13026C8.7801 8.17376 9.35604 7.75532 9.55685 7.13729L11.5245 1.08156Z" stroke="#4F6DCD"/>
+                                    </svg>
+                                </label>
+                                <input name="fst" id="fst-3" value="3" type="radio" />
+    
+                                <label for="fst-4">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5245 1.08156C11.6741 0.620903 12.3259 0.620903 12.4755 1.08156L14.4432 7.13729C14.644 7.75532 15.2199 8.17376 15.8697 8.17376H22.2371C22.7215 8.17376 22.9229 8.79357 22.531 9.07827L17.3797 12.8209C16.854 13.2029 16.634 13.8799 16.8348 14.498L18.8024 20.5537C18.9521 21.0143 18.4248 21.3974 18.033 21.1127L12.8817 17.3701C12.3559 16.9881 11.6441 16.9881 11.1183 17.3701L5.96701 21.1127C5.57515 21.3974 5.04791 21.0144 5.19759 20.5537L7.16522 14.498C7.36603 13.8799 7.14604 13.2029 6.62031 12.8209L1.469 9.07827C1.07714 8.79357 1.27853 8.17376 1.76289 8.17376H8.13026C8.7801 8.17376 9.35604 7.75532 9.55685 7.13729L11.5245 1.08156Z" stroke="#4F6DCD"/>
+                                    </svg>
+                                </label>
+                                <input name="fst" id="fst-4" value="4" type="radio" />
+
+                                <label for="fst-5">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5245 1.08156C11.6741 0.620903 12.3259 0.620903 12.4755 1.08156L14.4432 7.13729C14.644 7.75532 15.2199 8.17376 15.8697 8.17376H22.2371C22.7215 8.17376 22.9229 8.79357 22.531 9.07827L17.3797 12.8209C16.854 13.2029 16.634 13.8799 16.8348 14.498L18.8024 20.5537C18.9521 21.0143 18.4248 21.3974 18.033 21.1127L12.8817 17.3701C12.3559 16.9881 11.6441 16.9881 11.1183 17.3701L5.96701 21.1127C5.57515 21.3974 5.04791 21.0144 5.19759 20.5537L7.16522 14.498C7.36603 13.8799 7.14604 13.2029 6.62031 12.8209L1.469 9.07827C1.07714 8.79357 1.27853 8.17376 1.76289 8.17376H8.13026C8.7801 8.17376 9.35604 7.75532 9.55685 7.13729L11.5245 1.08156Z" stroke="#4F6DCD"/>
+                                    </svg>
+                                </label>
+                                <input name="fst" id="fst-5" value="5" type="radio" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="popup-review__bottom">
+                    <button class="primary-btn popup-review__btn popup-btn send-btn" type="submit"><span>Отправить</span></button>
+                    <p class="politic popup-review__politic">
+                        Мы обеспечиваем полную <a href="#" rel="nofollow">конфиденциальность</a> вашей личности
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup" data-target="popup-review-ok"> 
+    <div class="popup__body">
+        <div class="popup__content popup-call__content popup-call-response__content">
+            <picture class="close-popup close-popup-btn popup-call__close">
+                <source srcset="assets/img/icons/popup-call-1-close.svg" type="image/svg+xml">
+                <img src="assets/img/icons/popup-call-1-close.png" alt="close_popup">
+            </picture>
+            
+            <div class="popup-call-response__top">
+                <p class="popup-call__title">Ваш отзыв отправлен</p>
+            </div>
+            <div class="popup-call-response__inner">
+                <div class="popup-call-response__main">
+                    <img src="assets/img/popups/popup-call-1-ok.svg" alt="Ваша заявка принята" class="popup-call-response__img">
+                    <p class="popup-call__subtitle">Спасибо что оставили отзыв! Нам очень важно ваше мнение о нашей работе</p>                        
+                </div>
+                <a href="#" class="primary-btn popup-call-response__btn">Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+

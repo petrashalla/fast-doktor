@@ -1,0 +1,198 @@
+<section class="doctors-page section-offset">
+    <div class="container">
+        <div class="page-top">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><span>Врачи</span></li>
+            </ul>
+            <h1 class="title-h1">Наши специалисты</h1>
+        </div>
+
+        <form class="doctors-page__search">
+            <input id="searchInput" type="search" placeholder="Поиск по сайту" required class="input"> 
+            <img src="assets/img/icons/search.svg" class="doctors-page__search-icon">
+        </form>
+
+        <div class="doctors-page__grid">
+            <div class="doctors-page__sort">
+
+                <div class="doctors-page__sort_block sort__block">
+                    <p class="doctors-page__sort_text">Формат работы</p>
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="hospital" name="hospital" />
+                        <label for="hospital">Врачи стационара</label>
+                    </div>
+    
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="offsite" name="offsite" />
+                        <label for="offsite">Выездные врачи</label>
+                    </div>
+                </div>
+
+                <div class="doctors-page__sort_block sort__block">
+                    <p class="doctors-page__sort_text">Специализация врача</p>
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="therapist" name="therapist" />
+                        <label for="therapist">Терапевт</label>
+                    </div>
+                    
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="narcologist" name="narcologist" />
+                        <label for="narcologist">Психиатр-нарколог</label>
+                    </div>
+    
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="paramedic" name="paramedic" />
+                        <label for="paramedic">Фельдшер</label>
+                    </div>
+    
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="nurse" name="nurse" />
+                        <label for="nurse">Медсестра</label>
+                    </div>
+    
+                    <div class="doctors-page__sort_item sort__item">
+                        <input type="checkbox" id="psychologist" name="psychologist" />
+                        <label for="psychologist">Психолог</label>
+                    </div>
+                </div>
+
+
+                <p class="doctors-page__sort_quantity sort__quantity">Найдено врачей: <span>28</span></p>
+            </div>
+
+
+            <div class="doctors-page__cards">
+
+                <div class="doctors-page__card sort__card" data-categories="therapist offsite hospital">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-1.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-1.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+
+
+                <div class="doctors-page__card sort__card"  data-categories="nurse hospital">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-2.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-2.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="doctors-page__card sort__card"  data-categories="narcologist offsite">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-3.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-3.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="doctors-page__card sort__card"  data-categories="paramedic offsite hospital">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-4.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-4.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="doctors-page__card sort__card"  data-categories="psychologist offsite">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-1.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-1.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="doctors-page__card sort__card"  data-categories="therapist offsite">
+                    <a href="#">
+                        <picture  class="doctors-page__card_img">
+                            <source srcset="assets/img/doctors/doctor-4.webp" type="image/webp" />
+                            <img src="assets/img/doctors/doctor-4.jpg" alt="" />
+                        </picture>
+                    </a>
+                    <div class="doctors-page__card_info">
+                        <div class="doctors-page__card_top">
+                            <p class="doctors-page__card_experience">Стаж работы: 15 лет</p>
+                            <p class="doctors-page__card_fio">Иванов Иван Иванович</p>
+                        </div>
+                        <p class="doctors-page__card_post">Заведующий отделением реабилитации, нарколог</p>
+                        <div class="doctors-page__card_prices">
+                            <p>В клинике:<span>от 3000 ₽</span></p>
+                            <p>На дому:<span>от 3500 ₽</span></p>
+                        </div>
+                        <a href="#" class="doctors-page__card_btn btn-arrow">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
