@@ -1,0 +1,130 @@
+.popup-time {
+    &__content {
+        max-width: 1180px;
+        border-radius: 20px;
+        padding: 60px;
+        box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+        background: var(--bg-svetlo-seryy);
+        display: flex;
+    }
+
+    &__left {
+        padding-right: 40px;
+        border-right: 1px solid var(--color-svetlo-zelenyy-2);
+        margin-right: 40px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 420px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        color: var(--tekst);
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--tekst-svetlyy);
+        margin-bottom: 56px;
+    }
+
+    &__bottom {
+        width: 100%;
+        position: relative;
+    }
+
+    &__img img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    &__phone {
+        max-width: 270px;
+        position: absolute;
+        bottom: 29px;
+        right: 29px;
+    }
+
+    &__phone p {
+        font-size: 14px;
+        color: var(--tekst-svetlyy);
+        margin-bottom: 6px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__input:hover {
+        background-color: var(--belyy);
+    }
+
+    &__close {
+        width: 30px;
+        height: 30px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
+.popup-time-response {
+    &__content {
+        max-width: 583px;
+        padding: 10px;
+        position: relative;
+        display: block;
+    }
+    &__top_ok {
+        position: absolute;
+        top: -70px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 140px;
+        height: 140px;
+        border-radius: 100px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+        background-color: var(--belyy);
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__right {
+        padding: 10px;
+    }
+    &__text {
+        padding: 90px 38px 40px;
+        text-align: center;
+        .popup-time__title {
+            margin-bottom: 10px;
+        }
+        .popup-time__subtitle {
+            margin: 0;
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        &_ok {
+            padding: 10px 20px;
+            width: 100%;
+        }
+    }
+}

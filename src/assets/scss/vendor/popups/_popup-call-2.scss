@@ -1,0 +1,111 @@
+.popup-call {
+    &__content {
+        border-radius: 20px;
+        padding: 20px 20px 20px 80px;
+        max-width: 990px;
+        background: var(--bg-svetlo-seryy);
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__left {
+        flex-basis: 60%;
+        &_response {
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        &_img {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        color: var(--tekst);
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--tekst-svetlyy);
+        margin-bottom: 36px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__input:hover {
+        background-color: var(--belyy);
+    }
+
+    &__close {
+        width: 32px;
+        height: 32px;
+        top: 30px;
+        right: 30px;
+    }
+
+    &__img {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+.popup-call-response {
+    &__content {
+        max-width: 606px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__top {
+        border-radius: 10px;
+        padding: 30px 10px;
+        background: var(--belyy);
+        text-align: center;
+        margin-bottom: 30px;
+        & p {
+            margin: 0;
+        }
+    }
+    &__inner {
+        padding: 0 30px 30px 30px;
+    }
+    &__main {
+        padding: 0 15px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--color-svetlo-zelenyy-1);
+        margin-bottom: 30px;
+        text-align: center;
+        & img {
+            margin-bottom: 20px;
+        }
+        & p {
+            font-size: 16px;
+            color: var(--tekst-svetlyy);
+        }
+        &_error {
+            padding-bottom: 0;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+    &__btn {
+        display: block;
+        width: 100%;
+    }
+}
+
+

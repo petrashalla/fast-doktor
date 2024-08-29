@@ -1,0 +1,25 @@
+// popup cokie
+.popup-cookie {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    max-width: 623px;
+
+    &__row {
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+        background: var(--color-temno-zelenyy);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--belyy);
+        flex-basis: 64%;
+    }
+}

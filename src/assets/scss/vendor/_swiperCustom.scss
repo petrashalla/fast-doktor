@@ -1,0 +1,86 @@
+/* swiper CUSTOM */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* swiper-buttons */
+.swiper-btns {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.swiper-button-next, .swiper-button-prev,
+.swiper-button-next--white, .swiper-button-prev--white {
+    position: static;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background: var(--color-goluboy);
+    transition: all 0.3s ease;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--color-siniy);
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover,.swiper-button-prev:hover {
+    background: var(--color-siniy);
+}
+.swiper-button-next:hover:after, .swiper-button-prev:hover:after {
+    color: var(--belyy);
+}
+
+
+/* swiper-buttons--white */
+.swiper-button-next--white, .swiper-button-prev--white {
+    background: var(--belyy);
+}
+.swiper-button-next--white:after, .swiper-button-prev--white:after {
+    color: var(--color-siniy);
+}
+.swiper-button-next--white:hover,.swiper-button-prev--white:hover {
+    background: var(--color-goluboy);
+}
+.swiper-button-next--white:hover:after, .swiper-button-prev--white:hover:after {
+    color: var(--color-siniy);
+}
+
+
+/* swiper-pagination  */
+.swiper-pagination {
+    position: static; 
+    width: auto !important;
+
+    &-bullet {
+        position: static;
+        border-radius: 10px;
+        width: 25px;
+        height: 3px;
+        background: var(--color-siniy);
+    }
+}
+
+.swiper-pagination-fraction {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+
+    .swiper-pagination-current {
+        font-weight: 700;
+        font-size: 26px;
+        color: var(--belyy);
+    }
+}
+
+.swiper-scrollbar {
+    position: static !important;
+    background: rgba(255, 255, 255, 0.1);
+    &-drag {
+        background: var(--belyy);
+    }
+}
+

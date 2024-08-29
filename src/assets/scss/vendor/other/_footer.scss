@@ -1,0 +1,318 @@
+// footer
+.footer {
+    &__main {
+        padding: 80px 0;
+        background: linear-gradient(200deg, #b4c7f5 0%, #0030c8 100%);
+        color: var(--belyy);
+    }
+
+    &__row {
+        display: flex;
+        gap: 60px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #c7d6dc;
+        margin-bottom: 30px;
+    }
+
+    &__contant {
+        border-radius: 20px;
+        padding: 30px;
+        background: var(--belyy);
+        min-width: 324px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+        flex-basis: 40%;
+    }
+
+    &__item {
+        font-size: 14px;
+        color: #405f6a;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & a:hover, & button:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        color: var(--color-siniy);
+    }
+
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #003649;
+    }
+
+    &__networks {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__network {
+        border-radius: 5px;
+        padding: 6px;
+        width: 26px;
+        height: 26px;
+        background: var(--color-siniy);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__pays {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__pay {
+        flex: 1 0 auto;
+        border-radius: 10px;
+        background: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        &_item {
+            flex: 1 0 30%;
+            &-columns {
+                columns: 2;
+                column-gap: 30px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: 14px;
+        line-height: 140%;
+        color: var(--belyy);
+        padding: 5px 0;
+        transition: all 0.3s ease;
+        &-bold {
+            width: fit-content;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 30px;
+        border-top: 1px solid #c7d6dc;
+
+        &_links {
+            display: flex;
+            gap: 30px;
+            & a {
+                font-size: 14px;
+                color: var(--belyy);
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        &_btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            position: relative;
+        }
+
+        &_btns-static {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__btn_search {
+        border-radius: 5px;
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        background: var(--belyy);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn_eye {
+        min-width: 26px;
+    }
+
+    &__up {
+        position: absolute;
+        right: -85px;
+        bottom: -90px;
+        & p {
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            color: var(--belyy);
+        }
+    }
+
+    &__btn_up {
+        background: var(--belyy);
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        &::after {
+            color: #206175;
+            transform: rotate(-45deg);
+            margin-left: 4px;
+            margin-top: 4px;
+        }
+    }
+
+    &__copy {
+        font-size: 12px;
+        line-height: 140%;
+        color: var(--bg-svetlo-seryy);
+        & p:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__plashka {
+        padding: 12px 0;
+        background: var(--fon-plashek);
+        font-size: 14px;
+        color: var(--tegi);
+        text-align: center;
+    }
+}
+
+
+// media footer
+@media (max-width: 1500px) {
+    .footer {
+        &__up {
+            position: static;
+        }
+        &__bottom {
+            &_links {
+                display: flex;
+                gap: 20px;
+                & a {
+                    flex-basis: auto;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        &__main {
+            padding: 20px 0;
+        }
+        &__logo {
+            min-width: 264px;
+        }
+        &__row {
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            &_item {
+                flex: 1 0 40%;
+            }
+        }
+        &__bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            &_btns {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 688px) {
+    .footer {
+        &__logo {
+            min-width: 264px;
+        }
+        &__contant {
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 100%;
+        }
+        &__network {
+            width: 34px;
+            height: 34px;
+        }
+        &__pay {
+            width: 80px;
+            height: 50px;
+        }
+        &__nav_item {
+            flex: 1 0 100%;
+        }
+        &__bottom {
+            &_links {
+                flex-direction: column;
+                gap: 14px;
+            }
+        }
+        &__plashka {
+            font-size: 12px;
+        }
+    }
+}

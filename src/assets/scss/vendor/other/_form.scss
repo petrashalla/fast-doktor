@@ -1,0 +1,140 @@
+// form
+.form {
+    padding: 100px 0;
+    background: linear-gradient(200deg, rgba(206, 215, 238, 0.7) 0%, rgba(0, 39, 165, 0.7) 100%);
+    &__row {
+        display: flex;
+        width: 100%;
+        position: relative;
+        &-right {
+            justify-content: end;
+        }
+    }
+
+    &__wrapper {
+        width: 60%;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        color: var(--belyy);
+        margin-bottom: 40px;
+        & span {
+            border: 2px solid var(--fon-plashek);
+            border-radius: 10px;
+            padding: 0 5px;
+        }
+    }
+
+    &__subtitle {
+        color: var(--belyy);
+        display: flex;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        border-radius: 20px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.8);
+        color: var(--tekst-svetlyy);
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__input, &__btn {
+        flex: 1 0 25%;
+    }
+
+    &__politic {
+        flex-basis: 100%;
+        color: var(--tekst-svetlyy);
+        & a {
+            color: var(--tekst-svetlyy);
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -100px;
+        right: -40px;
+        &-left {
+            left: 0;
+        }
+    }
+}
+
+// media form
+@media(max-width: 1000px) {
+    .form {
+        &__row {
+            flex-direction: column;
+        }
+        &__wrapper {
+            width: 100%;
+            display: contents;
+        }
+        &__title {
+            order: -3;
+        }
+        &__subtitle {
+            margin-bottom: 0;
+            order: -2;
+        }
+        &__input, &__btn {
+            flex: 1 0 100%;
+        }
+        &__img {
+            position: static;
+            order: -1;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: -15%;
+            width: 56%;
+        }
+    }
+}
+
+@media(max-width: 688px) {
+    .form {
+        padding: 40px 0;
+        &__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    
+        &__subtitle {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__content {
+            border-radius: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        &__text {
+            margin-bottom: 20px;
+        }
+        &__img {
+            width: 80%;
+            margin-bottom: -25%;
+        }
+
+        &__phone-btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

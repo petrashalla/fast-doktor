@@ -1,0 +1,70 @@
+// error 404
+.error {
+    padding-top: 20px;
+    &__inner {
+        max-width: 714px;
+        margin: 0 auto;
+    }
+
+    &__number {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 280px;
+        line-height: 90%;
+        text-align: center;
+        background: linear-gradient(194deg, #ced7ee 0%, #0030c8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.14;
+    }
+
+    &__text {
+        line-height: 140%;
+        text-align: center;
+        color: var(--tegi);
+        margin-bottom: 30px;
+        padding-top: 30px;
+        border-top: 1px solid var(--izobrazhenie);
+        margin-top: 30px;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        flex: 1 0 40%;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background: var(--color-goluboy);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+// media error
+@media (max-width: 688px) {
+    .error {
+        &__number {
+            font-size: 136px;
+        }
+        &__links {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}

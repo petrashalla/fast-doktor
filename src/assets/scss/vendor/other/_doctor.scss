@@ -1,0 +1,348 @@
+// doctor
+
+.doctor {
+    padding-top: 20px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 3fr 6fr;
+        gap: 40px;
+        align-content: normal;
+    }
+
+    &__photo {
+        width: 100%;
+        max-width: 550px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        width: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &__rating {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        border-radius: 5px;
+        padding: 6px 14px;
+        background: #f9f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_estimation {
+            padding-right: 16px;
+            border-right: 1px solid #c7d6dc;
+            margin-right: 16px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            color: var(--tegi);
+            display: flex;
+            gap: 5px;
+        }
+
+        &_stars {
+            display: flex;
+        }
+    }
+
+    &__prices {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        & p {
+            border-radius: 5px;
+            padding: 14px 20px;
+            background: var(--color-goluboy);
+            font-size: 14px;
+            line-height: 140%;
+            color: #003649;
+            text-align: center;
+            flex: 1 0 48%;
+            & span {
+                display: block;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                color: var(--color-siniy);
+                text-align: center;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__schedule {
+        border-radius: 10px;
+        padding: 30px;
+        background: var(--bg-svetlo-seryy);
+        &_title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: #405f6a;
+            margin-bottom: 30px;
+        }
+        &_list {
+            color: #003649;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 14px 0px;
+            border-bottom: 1px solid var(--izobrazhenie);
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &_time {
+            font-weight: 500;
+        }
+        &_weekend {
+            font-weight: 500;
+            color: var(--color-siniy);
+        }
+    }
+
+    &__right {
+        border-radius: 20px;
+        padding: 40px;
+        background: var(--bg-svetlo-seryy);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &_title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: #405f6a;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &_experience {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--color-siniy);
+            border-radius: 5px;
+            padding: 8px 16px;
+            background: var(--color-goluboy);
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+
+        &_fio {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: #003649;
+        }
+
+        &_post {
+            display: flex;
+        }
+
+        &_description {
+            font-size: 14px;
+            line-height: 140%;
+            color: #405f6a;
+        }
+    }
+
+    &__post {
+        &_item {
+            font-size: 14px;
+            line-height: 140%;
+            color: #003649;
+            display: flex;
+            gap: 10px;
+            &:first-child {
+                padding-right: 40px;
+                border-right: 1px solid var(--izobrazhenie);
+                margin-right: 40px;
+            }
+        }
+        &_icon {
+            display: block;
+            border-radius: 6px;
+            background-color: var(--color-goluboy);
+            padding: 8px;
+            min-width: 43px;
+            width: 43px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_text {
+            color: #405f6a;
+            margin-bottom: 5px;
+        }
+        &_post {
+            font-weight: 500;
+        }
+    }
+
+    &__list ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        & li {
+            color: #003649;
+            display: flex;
+            gap: 12px;
+            &::before {
+                content: "";
+                display: block;
+                min-width: 18px;
+                border-radius: 10px;
+                width: 18px;
+                height: 3px;
+                background-color: var(--color-siniy);
+                margin-top: 9px;
+            }
+
+            & span {
+                font-weight: 700;
+                color: var(--color-siniy);
+            }
+        }
+    }
+
+    &__diplomas {
+        &_swiper {
+            max-width: 853px;
+            margin-bottom: 20px;
+            height: auto;
+        }
+        &_swiper-slide {
+            & a {
+                display: block;
+                border-radius: 10px;
+                overflow: hidden;
+                & p {
+                    width: 100%;
+                    padding: 20px;
+                    background: var(--belyy);
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: #003649;
+                }
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// media doctor
+@media (max-width: 1300px) {
+    .doctor {
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        &__photo {
+            margin: 0 auto;
+            order: -2;
+        }
+        &__right, &__left {
+            display: contents;
+        }
+        &__info {
+            display: contents;
+            &_top {
+                order: -3;
+            }
+            &_post, &_description {
+                order: -1;
+            }
+        }
+        &__btn {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 688px) {
+    .doctor {
+        &__photo {
+            max-width: 350px;
+        }
+        &__prices {
+            & p {
+                padding: 14px;
+                & span {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__schedule {
+            padding: 20px;
+            &_title {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            &_item {
+                padding: 12px 0px;
+            }
+        }
+        &__right {
+            &_title {
+                font-size: 20px;
+            }
+        }
+        &__info {
+            &_fio {
+                font-size: 24px;
+            }
+            &_post {
+                flex-direction: column;
+            }
+        }
+        &__post {
+            &_item:first-child {
+                padding-right: 0;
+                border-right: none;
+                margin-right: 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid var(--izobrazhenie);
+                margin-bottom: 20px;
+            }
+        }
+        &__diplomas {
+            &_swiper-slide {
+                & a p {
+                    padding: 14px;
+                    font-size: 12px;
+                    background-color: var(--bg-svetlo-seryy);
+                }
+            }
+        }
+    }
+}

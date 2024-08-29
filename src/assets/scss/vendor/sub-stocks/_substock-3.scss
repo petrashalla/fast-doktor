@@ -1,0 +1,103 @@
+// sub-stock-3
+.substock {
+    &__row {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__between {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__item {
+        flex: 1 0 30%;
+        border-radius: 20px;
+        background: var(--bg-svetlo-seryy);
+        min-height: 202px;
+        overflow: hidden;
+        position: relative;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        &_title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: var(--tekst);
+        }
+        & span {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: #93c3bc;
+            opacity: 0.6;
+        }
+        & p {
+            position: relative;
+            z-index: 2;
+        }
+        &_width p {
+            max-width: 75%;
+        }
+    }
+
+    &__btn-circle {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        background: rgba(61, 124, 133, 0.2);
+        opacity: 0.4;
+        &::after {
+            color: var(--tekst-svetlyy);
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+}
+
+
+// media sub-stock-3
+@media (max-width: 960px) {
+    .substock {
+        &__row {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .substock {
+        &__item {
+            border-radius: 10px;
+            min-height: 188px;
+            padding: 20px;
+            &_title {
+                font-size: 16px;
+            }
+            & span {
+                font-size: 28px;
+            }
+        }
+        &__btn-circle {
+            width: 35px;
+            min-width: 35px;
+            height: 35px;
+        }
+        &__img {
+            right: 0;
+            height: 95%;
+        }
+    }
+}

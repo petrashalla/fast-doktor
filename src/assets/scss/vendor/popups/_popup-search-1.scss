@@ -1,0 +1,109 @@
+// popup-search-1
+
+.popup-search {
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        padding: 0;
+    }
+    &__content {
+        padding: 90px;
+        background: var(--belyy);
+        max-width: 780px;
+        height: 100vh;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        color: var(--tekst);
+        margin-bottom: 30px;
+    }
+
+    &__message {
+        font-size: 14px;
+        color: var(--tekst-svetlyy);
+        margin-bottom: 10px;
+    }
+
+    &__search {
+        margin-top: 40px;
+        max-height: 552px;
+        overflow-y: auto;
+        &-result {
+            max-height: 666px;
+        }
+    }
+
+    &__list {
+        & li a {
+            display: block;
+            border-bottom: 1px solid var(--color-svetlo-zelenyy-2);
+            padding: 18px 0;
+            margin-right: 20px;
+            transition: all 0.3s ease;
+            &:hover {
+                opacity: 0.5;
+            }
+            & p {
+                font-weight: 500;
+                font-size: 16px;
+                color: var(--color-temno-zelenyy);
+                margin-bottom: 6px;
+            }
+            & span {
+                font-size: 14px;
+                color: var(--tekst-svetlyy);
+            }
+        }
+    }
+
+    &__list_result {
+        border-radius: 0 0 5px 5px;
+        background: var(--fon-plashek);
+        & li a {
+            display: block;
+            border-radius: 8px;
+            padding: 18px 20px 18px 16px;
+            margin: 0 4px;
+            &:hover {
+                background-color: var(--color-svetlo-zelenyy-2);
+            }
+            & p {
+                font-weight: 500;
+                font-size: 16px;
+                color: var(--color-temno-zelenyy);
+                margin-bottom: 6px;
+            }
+            & span {
+                font-size: 14px;
+                color: rgba(0, 54, 73, 0.5);
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            & span p {
+                display: inline;
+                font-weight: 400 !important;
+                font-size: 14px !important;
+                color: var(--tekst) !important;
+            }
+        }
+    }
+
+
+    &__close {
+        width: 50px;
+        height: 50px;
+        top: 90px;
+        right: 90px;
+    }
+}
+
+
+

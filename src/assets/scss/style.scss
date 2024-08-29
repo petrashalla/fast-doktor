@@ -1,0 +1,51 @@
+/*Общие */
+
+@import 'vendor/_reset';
+@import 'vendor/_normalize';
+@import 'vendor/_vars';
+@import 'vendor/_fonts';
+@import 'vendor/_base';
+@import 'vendor/_swiperCustom';
+
+
+
+@import 'vendor/headers/header-7';
+@import 'vendor/intros/intro-3';
+@import 'vendor/abouts/about-1';
+@import 'vendor/services/services-1';
+@import 'vendor/stages/stages-2';
+
+@import 'vendor/other/guarantees';
+@import 'vendor/other/price';
+@import 'vendor/other/advantages';
+@import 'vendor/other/form';
+@import 'vendor/other/text-block';
+@import 'vendor/other/faq';
+@import 'vendor/other/reviews';
+@import 'vendor/other/licenses';
+@import 'vendor/other/doctors';
+@import 'vendor/other/contacts';
+@import 'vendor/other/footer';
+
+
+@import 'vendor/other/page-content';
+@import 'vendor/other/services';
+@import 'vendor/other/articles';
+@import 'vendor/other/doctor';
+@import 'vendor/other/filials';
+@import 'vendor/other/stocks';
+@import 'vendor/other/gallery';
+@import 'vendor/other/error';
+@import 'vendor/other/legal-doc';
+
+
+
+
+@import 'vendor/popups/popup.scss';   // подключается для всех pop-up, а далее попапы на выбор
+@import 'vendor/popups/popup-city-2';
+@import 'vendor/popups/popup-search-2';
+@import 'vendor/popups/popup-call-1';
+@import 'vendor/popups/popup-review';
+
+
+

@@ -1,0 +1,143 @@
+// about-4
+.about {
+    padding: 100px 0;
+    background: url("./../img/about/about-4.jpg") center no-repeat;
+    background-size: cover;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 56px;
+    }
+
+    &__title {
+        color: var(--belyy);
+    }
+
+    &__text {
+        color: var(--belyy);
+        font-size: 14px;
+        & p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &_bold {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--belyy);
+            &::before {
+                content: url("./../img/icons/asterisk.svg");
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+    &__btn {
+        display: block;
+        border-radius: 20px;
+        padding: 20px 14px;
+        background: var(--belyy);
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--tekst);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+        &-circle {
+            background: rgba(61, 124, 133, 0.2);
+            opacity: 0.4;
+            &::after {
+                color: var(--tekst-svetlyy);
+            }
+        }
+        &:hover {
+            opacity: 0.9;
+            .about__btn-circle {
+                opacity: 1;
+            }
+        }
+    }
+
+
+    &__advantages {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__advantage {
+        flex: 1 0 20%;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        padding: 30px;
+        min-height: 196px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18px;
+        &:last-child {
+            padding: 0;
+        }
+        & p:first-child {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--belyy);
+            & span {
+                font-weight: 700;
+                font-size: 34px;
+                color: var(--belyy);
+            }
+        }
+        & p:last-child {
+            font-size: 14px;
+            color: var(--belyy);
+            max-width: 72%;
+        }
+    }
+}
+
+
+// media about-4
+@media (max-width: 850px) {
+    .about {
+        padding: 40px 0;
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            &_bold {
+                font-size: 14px;
+            }
+        }
+        &__btn {
+            border-radius: 10px;
+        }
+        &__advantages {
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__advantage {
+            border-radius: 10px;
+            padding: 20px;
+            min-height: auto;
+            gap: 6px;
+            &:last-child {
+                padding: 0;
+            }
+            & p:first-child span {
+                font-size: 24px;
+            }
+            & p:last-child {
+                max-width: 100%;
+            }
+        }
+    }
+}

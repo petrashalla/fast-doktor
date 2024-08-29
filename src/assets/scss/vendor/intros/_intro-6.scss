@@ -1,0 +1,113 @@
+.intro-6 {
+    padding: 80px 0;
+
+    &__row {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__main {
+        flex: 1 0 60%;
+
+        & h1, h2 {
+            color: var(--tekst);
+            margin-bottom: 20px;
+        }
+        & p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cards ul {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 32px;
+        & li {
+            border: 1px solid var(--color-zelenyy);
+            border-radius: 10px;
+            padding: 24px 28px;
+            font-size: 16px;
+            color: var(--color-zelenyy);
+            & img {
+                margin-bottom: 20px;
+            }
+        }
+    } 
+
+
+    &__form {
+        border-radius: 10px;
+        padding: 30px 40px;
+        background: var(--color-svetlo-zelenyy-2);
+
+        &_text {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+        &_title {
+            font-weight: 500;
+            color: var(--tekst);
+            margin: 0 !important;
+        }
+        &_phone {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 111%;
+            color: var(--color-zelenyy);
+        }
+        &_inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        &_input {
+            flex: 1 0 25%;
+        }
+        &_btn {
+            flex: 1 0 auto;
+        }
+    }
+
+
+    &__right {
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        &_bg img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+
+    &__label ul {
+        display: flex;
+        gap: 10px;
+
+        & li {
+            border-radius: 10px;
+            padding: 14px 20px;
+            background: var(--belyy);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: var(--color-temno-zelenyy);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+    }
+}
+
+

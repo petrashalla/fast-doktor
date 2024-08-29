@@ -1,0 +1,174 @@
+// intro-1
+.intro-1 {
+    padding: 80px 0;
+    background: var(--fon-plashek);
+
+    &__row {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__left {
+        max-width: 65%;
+    }
+
+    &__main {
+        border-radius: 10px;
+        padding: 65px;
+        background: var(--belyy);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+
+        & h1, h2 {
+            color: var(--tekst);
+            margin-bottom: 15px;
+        }
+
+        &_bottom {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__form {
+        border-radius: 10px;
+        padding: 40px;
+        background: var(--belyy);
+
+        &_title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: var(--tekst);
+            margin-bottom: 5px;
+        }
+
+        &_phone {
+            margin-bottom: 12px;
+        }
+
+        &_subtitle {
+            margin-bottom: 30px;
+        }
+
+        &_inner {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &_input {
+            width: 100%;
+            background: var(--bg-svetlo-seryy);
+        }
+    }
+
+    &__cards ul {
+        display: flex;
+        gap: 15px;
+        & li {
+            border-radius: 10px;
+            padding: 12px 20px;
+            background: var(--color-zelenyy);
+            font-size: 14px;
+            line-height: 140%;
+            color: var(--belyy); 
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex: 1 0 30%;
+        }
+    } 
+
+    &__swiper {
+        height: 85%;
+        margin-bottom: 20px;
+        &-btns {
+            position: absolute;
+            right: 80px;
+            bottom: 70px;
+        }
+    }
+}
+
+
+// media intro-1
+@media (max-width: 1050px) {
+    .intro-1 {
+        padding: 40px 0;
+        &__row {
+            flex-direction: column;
+        }
+        &__right {
+            flex-direction: column-reverse;
+        }
+        &__left {
+            max-width: 100%;
+        }
+        &__swiper {
+            margin-bottom: 0;
+            height: 100%;
+        }
+        &__cards_mobile {
+            display: none;
+        } 
+    }
+}
+@media (max-width: 688px) {
+    .intro-1 {
+        padding: 40px 0;
+        &__row {
+            flex-direction: column;
+        }
+        &__right {
+            flex-direction: column-reverse;
+        }
+        &__left {
+            max-width: 100%;
+        }
+        &__main {
+            padding: 20px;
+            gap: 20px;
+            height: 100%;
+            & h1, h2 {
+                margin-bottom: 20px;
+            }
+            &_btn {
+                width: 100%;
+            }
+        }
+        &__form {
+            padding: 20px;
+            &_title {
+                font-size: 18px;
+            }
+            &_subtitle {
+                margin-bottom: 20px;
+            }
+        }
+        &__cards ul {
+            gap: 10px;
+            & li {
+                padding: 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                flex: 1 0 30%;
+            }
+        }
+        &__swiper {
+            overflow: visible;
+        }
+        &__swiper-btns, &__cards_mobile {
+            display: none;
+        } 
+    }
+}
