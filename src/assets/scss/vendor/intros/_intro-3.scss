@@ -3,6 +3,10 @@
     padding: 80px 0;
     position: relative;
 
+    &__article {
+        padding-top: 30px;
+    }
+
     &__img-bg {
         position: absolute;
         width: 100%;
@@ -25,8 +29,7 @@
     &__main {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 50px;
+        gap: 40px;
         flex: 1 0 66%;
 
         & h1, h2 {
@@ -205,6 +208,9 @@
 @media (max-width: 688px) {
     .intro-3 {
         padding: 40px 0;
+        &__article {
+            padding-top: 20px;
+        }
         &__main {
             gap: 29px;
             & h1, h2 {

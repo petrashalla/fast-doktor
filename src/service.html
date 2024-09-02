@@ -1,5 +1,5 @@
 
-<section class="intro-3 section-offset">
+<section class="intro-3 intro-3__article section-offset">
     <picture class="intro-3__img-bg">
         <source srcset="assets/img/intro/intro-bg-3.webp" type="image/webp" />
         <img src="assets/img/intro/intro-bg-3.jpg" alt="" />
@@ -80,9 +80,89 @@
 </section>
 
 
+{{> text-block-1 }}
 {{> price }}
 {{> text-block-1 }}
-{{> advantages }}
+
+<section class="advantages section-offset">
+    <div class="container">
+        <div class="advantages__top">
+            <p class="title-h2">Преимущества клиники</p>
+        </div>
+
+        <div class="advantages__list">
+            <ul>
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-1.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-1.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Анонимность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-2.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-2.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Безопасность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-3.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-3.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Эффективность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-4.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-4.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Оперативность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-5.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-5.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Комплексность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+
+                <li>
+                    <picture class="advantages__icon">
+                        <source srcset="assets/img/advantages/advantages-icon-6.svg" type="image/svg+xml">
+                        <img src="assets/img/advantages/advantages-icon-6.png" alt="">
+                    </picture>
+                    <div class="advantages__text">
+                        <p>Доступность</p>
+                        <p>Наши доктора помогают избавиться пациентам от хронических зависимостей. Повышаем качество жизни клиентов, их родственников, родных и близких</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="primary-btn advantages__btn popup-btn" data-path="popup-call">Заказать услугу</button>
+    </div>
+</section>
+
 {{> stages-2 }}
 {{> page-content }}
 
@@ -95,7 +175,6 @@
                         <source srcset="assets/img/text-block/text-block-1.webp" type="image/webp" />
                         <img src="assets/img/text-block/text-block-1.jpg" alt="" />
                     </picture>
-                    <p>Врач нарколог Иванов И.И. меряет давление</p>
                 </div>
             </div>
 
@@ -118,7 +197,6 @@
                         <source srcset="assets/img/text-block/text-block-2.webp" type="image/webp" />
                         <img src="assets/img/text-block/text-block-2.jpg" alt="" />
                     </picture>
-                    <p>Врач нарколог Иванов И.И. меряет давление</p>
                 </div>
             </div>
 
@@ -353,10 +431,10 @@
     </div>
 </section>
 
+{{> form-2 }}
 {{> guarantees }}
 {{> faq }}
 {{> reviews }}
-{{> form-2 }}
 {{> licenses }}
 {{> doctors }}
 {{> contacts }}

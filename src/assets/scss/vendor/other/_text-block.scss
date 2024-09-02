@@ -30,6 +30,9 @@
     & h5 {
         font-size: 18px;
     }
+    & h2:empty, & h3:empty, & h4:empty, & h5:empty, & h6:empty {
+        margin-bottom: 0;
+    }
 
     & p {
         &:not(:last-child) {
@@ -137,7 +140,6 @@
         background: #f2f8f7;
         border-left: 3px solid var(--color-zelenyy);
         padding: 30px 30px 30px 40px;
-        font-style: italic;
         font-size: 18px;
         line-height: 140%;
         color: var(--tekst-svetlyy);

@@ -14,11 +14,10 @@ if (scrollTop)
     window.addEventListener(event, function () {
         let headerHeight = header.clientHeight;
         const plashka = header.querySelector('.header__plashka');
-        const headerTop = header.querySelector('.header__top');
+        const headerSubmenu = header.querySelector('.header__submenu-2');
         const headerMain = header.querySelector('.header__main');
         if (plashka) {
             var originalHeightPlashka = plashka.offsetHeight;
-            var originalHeightHeaderTop = headerTop.offsetHeight;
             var originalHeightHeaderMain = headerMain.offsetHeight;
         }
         window.onscroll = function (e) {
@@ -28,15 +27,11 @@ if (scrollTop)
                     plashka.style.height = '0px';
                     plashka.style.opacity = '0';
 
-                    if(window.innerWidth < 1188) {
-                        headerTop.classList.add('hide');
-                        headerTop.style.height = '0px';
-                        headerTop.style.opacity = '0';
-                    }
-                    else {
+                    if(window.innerWidth > 1188) {
                         headerMain.classList.add('hide');
                         headerMain.style.height = '0px';
                         headerMain.style.opacity = '0';
+                        headerSubmenu.style.top = '100px'
                     }
                 }
             }
@@ -45,13 +40,11 @@ if (scrollTop)
                 plashka.classList.remove('hide');
                 plashka.style.opacity = '1';
 
-                headerTop.style.height = originalHeightHeaderTop + 'px';
-                headerTop.classList.remove('hide');
-                headerTop.style.opacity = '1';
-
                 headerMain.style.height = originalHeightHeaderMain + 'px';
                 headerMain.classList.remove('hide');
                 headerMain.style.opacity = '1';
+
+                headerSubmenu.style.top = '235px'
             }
         };
     })
@@ -90,7 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const discountBlock = document.querySelector('.plashka.header__discount');
     const mainContent = document.querySelector('main');
     if (discountBlockButton) {
-        discountBlockButton.addEventListener('click', function() {
+        discountBlockButton.addEventListener('click', function(e) {
+            e.stopPropagation();
             discountBlock.classList.add('hidden');
             mainContent.classList.add('shifted');
         });

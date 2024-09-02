@@ -246,6 +246,7 @@ main.shifted {
     height: 20px;
 }
 .header__nav_service-span span {
+    display: block;
     border-radius: 5px;
     width: 16px;
     height: 2px;
@@ -266,6 +267,7 @@ main.shifted {
 
 /* header__discount */
 .header__discount {
+    cursor: pointer;
     padding: 12px 0;
     background: var(--color-siniy);
     font-weight: 500;
@@ -640,26 +642,17 @@ main.shifted {
 }
 .header__service_submenu-2 .header__stock_link {
     width: max-content;
+    color: var(--color-siniy);
+    margin-left: auto;
+    & span{
+        color: var(--color-siniy) !important;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
 }
-.header__service_submenu-2 .header__stock_link span{
-    display: none;
-}
-.header__service_submenu-2 .header__stock_link::after {
-    content: url("../img/icons/arrow-right-blue.svg");
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    border: 1px solid var(--belyy);
-    border-radius: 65px;
-    padding-top: 4px;
-    padding-left: 4px;
-    background: var(--belyy);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+
+
 
 /* header__service_submenu-2 lvl3 */
 .header__service-lvl3_submenu-2 .header__submenu_tab-content ul {
@@ -766,9 +759,6 @@ main.shifted {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-.burger__menu span:nth-child(2) {
-    width: 80%;
 }
 
 .burger__menu--active span:first-child {
