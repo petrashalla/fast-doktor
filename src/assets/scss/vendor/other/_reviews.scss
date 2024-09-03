@@ -17,9 +17,9 @@
     &__swiper-slide {
         height: auto;
     }
-    &__swiper {
-        overflow: visible;
-    }
+    // &__swiper {
+    //     overflow: visible;
+    // }
 
     &__card {
         border-radius: 10px;
@@ -481,6 +481,11 @@
             &_politic {
                 flex-direction: column-reverse;
             }
+        }
+    }
+    .reviews {
+        &__swiper {
+            overflow: hidden;
         }
     }
 }

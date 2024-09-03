@@ -1076,7 +1076,7 @@ main.shifted {
 
 @media (max-width: 800px) {
     main {
-        margin-top: 266px;
+        margin-top: 252px;
     }
     main.shifted {
         margin-top: 177px;
@@ -1166,6 +1166,12 @@ main.shifted {
 }
 @media (max-width: 365px) {
     main {
-        margin-top: 309px;
+        margin-top: 303px;
+    }
+    main.shifted {
+        margin-top: 188px;
+    }
+    .header__menu--active {
+        top: 132px;
     }
 }

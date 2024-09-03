@@ -1,31 +1,39 @@
 /* hide header */
 let scrollWidthFunc = () => {
     let scrollWidth = window.innerWidth - document.body.clientWidth;
-    document.querySelector('html').style.paddingRight = scrollWidth + 'px';
-    document.querySelector('header').style.paddingRight = scrollWidth + 'px';
+
+    document.body.style.paddingRight = scrollWidth + 'px';
+    document.body.style.overflow = 'hidden';
 }
+
 const scrollTop = document.querySelector('.scroll-top');
-if (scrollTop)
+if (scrollTop) {
     scrollTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+}
 
 ['load', 'resize'].forEach((event) => {
     window.addEventListener(event, function () {
+        let header = document.querySelector('header'); 
+        if (!header) return;
+
         let headerHeight = header.clientHeight;
         const plashka = header.querySelector('.header__plashka');
         const headerSubmenu = header.querySelector('.header__submenu-2');
         const headerMain = header.querySelector('.header__main');
+
         if (plashka) {
             var originalHeightPlashka = plashka.offsetHeight;
             var originalHeightHeaderMain = headerMain.offsetHeight;
         }
+
         window.onscroll = function (e) {
             if (window.scrollY > headerHeight) {
                 if (!plashka.classList.contains('hide')) {
                     plashka.classList.add('hide');
-                    plashka.style.height = '0px';
-                    plashka.style.opacity = '0';
+                    plashka.style.position = 'absolute';
+                    plashka.style.top = '-300px';
 
                     if(window.innerWidth > 1188) {
                         headerMain.classList.add('hide');
@@ -36,9 +44,8 @@ if (scrollTop)
                 }
             }
             else {
-                plashka.style.height = originalHeightPlashka + 'px';
                 plashka.classList.remove('hide');
-                plashka.style.opacity = '1';
+                plashka.style.position = 'static';
 
                 headerMain.style.height = originalHeightHeaderMain + 'px';
                 headerMain.classList.remove('hide');
@@ -143,17 +150,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleMenuInteraction() {
         const screenWidth = window.innerWidth;
+        const isTouchDevice = 'ontouchstart' in window;
 
         headerNavList.forEach(item => {
             item.removeEventListener('click', accordion);
             item.removeEventListener('mouseenter', openOnHover);
             item.removeEventListener('mouseleave', handleMouseLeave);
 
-            if (screenWidth > 1188) {
+            if (screenWidth > 1188 && !isTouchDevice) {
                 item.addEventListener('mouseenter', openOnHover);
                 item.addEventListener('mouseleave', handleMouseLeave);
             } else {
                 item.addEventListener('click', accordion);
+                item.removeEventListener('touchstart', accordion); // Remove touchstart if not needed
             }
         });
     }
@@ -163,15 +172,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function handleMouseLeave(e) {
-        document.addEventListener('mousemove', function onMouseMove(event) {
-            const isInsideMenu = isCursorNear(this, event);
-            const isInsideSubmenu = this.contains(event.target);
+        if (!('ontouchstart' in window)) {
+            document.addEventListener('mousemove', function onMouseMove(event) {
+                const isInsideMenu = isCursorNear(this, event);
+                const isInsideSubmenu = this.contains(event.target);
 
-            if (!isInsideMenu && !isInsideSubmenu) {
-                closeMenu(this);
-                document.removeEventListener('mousemove', onMouseMove);
-            }
-        }.bind(this));
+                if (!isInsideMenu && !isInsideSubmenu) {
+                    closeMenu(this);
+                    document.removeEventListener('mousemove', onMouseMove);
+                }
+            }.bind(this));
+        }
     }
 
     function accordion(e) {
@@ -195,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', handleMenuInteraction);
     handleMenuInteraction();
     /*  end menu  */
+
 
 
 
@@ -695,7 +707,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const articlesSwiper = new Swiper(".articlesSwiper", {
-        slidesPerView: 1.01,
+        slidesPerView: 1.07,
         spaceBetween: 14,
         navigation: {
             nextEl: ".articles__swiper-button-next",

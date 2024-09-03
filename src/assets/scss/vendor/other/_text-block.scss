@@ -122,6 +122,7 @@
         padding: 30px;
         background: linear-gradient(225deg, rgba(120, 149, 224, 0.7) 0%, rgba(0, 39, 165, 0.7) 100%);
         color: var(--belyy);
+        overflow: hidden;
         &_title {
             font-weight: 700;
             font-size: 26px;
