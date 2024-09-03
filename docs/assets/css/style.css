@@ -2639,7 +2639,7 @@ main.shifted {
 
 @media (max-width: 800px) {
     main {
-        margin-top: 266px;
+        margin-top: 252px;
     }
 
     main.shifted {
@@ -2758,7 +2758,15 @@ main.shifted {
 
 @media (max-width: 365px) {
     main {
-        margin-top: 309px;
+        margin-top: 303px;
+    }
+
+    main.shifted {
+        margin-top: 188px;
+    }
+
+    .header__menu--active {
+        top: 132px;
     }
 }
 
@@ -3532,10 +3540,6 @@ main.shifted {
 
     .services__card_price {
         font-size: 18px;
-    }
-
-    .services__swiper {
-        overflow: visible;
     }
 
     .services__swiper-btns {
@@ -6178,6 +6182,10 @@ main.shifted {
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
     }
+
+    .reviews__swiper {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 688px) {
@@ -6565,10 +6573,6 @@ main.shifted {
         margin-bottom: 0 !important;
     }
 
-    .licenses__swiper {
-        overflow: visible;
-    }
-
     .licenses__swiper-btns {
         display: none;
     }
@@ -6914,10 +6918,6 @@ main.shifted {
 
     .doctors__card_fio {
         font-size: 18px;
-    }
-
-    .doctors__swiper {
-        overflow: visible;
     }
 
     .doctors__swiper-btns {
@@ -8523,10 +8523,6 @@ main.shifted {
 
     .articles__swiper-cards {
         margin-bottom: 30px;
-    }
-
-    .articles__swiper {
-        overflow: visible;
     }
 
     .articles__swiper-btns {
